@@ -42,7 +42,7 @@ export const Login=()=>{
         <>
             <div className="mt-lg-5 container">
                 <p className="text-center text-success text-uppercase display-6">
-                    Placement job list</p>
+                    Placement Details</p>
                 <div className="row justify-content-center">
                     <div className="col-lg-6 col-md-8 col-sm-12 p-5 shadow-text-primary">
                         <div className="form group">

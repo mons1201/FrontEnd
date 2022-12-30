@@ -6,7 +6,13 @@ export const Menu=()=>
         <>
           <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="/">Placement Companies</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <div className="mt-4 row justify-content-center">
+                        <p className="text-center text-primary display-5">
+                            Placement Companies List
+                        </p>
+                    </div>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="mohan" />
                 <Navbar.Collapse id="mohan">
                     <Nav className="me-auto">

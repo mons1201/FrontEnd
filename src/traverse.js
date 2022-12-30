@@ -12,17 +12,17 @@ export const Traverse=(props)=>
         //alert(JSON.stringify(mylist))
     }
 
-    useEffect(()=>{
-        loads()
-    },[])
     // useEffect(()=>{
-    //     if(props.myown){
-    //         setMylist(props.myown)
-    //     }
-    //     else{
-    //         loads()
-    //     }
+    //     loads()
     // },[])
+    useEffect(()=>{
+        if(props.myown){
+            setMylist(props.myown)
+        }
+        else{
+            loads()
+        }
+    },[])
 
     return(
         <>
@@ -47,7 +47,7 @@ export const Traverse=(props)=>
                                 mylist.map((each)=>(
                                     <tr>
                                         <td>
-                                            <a href="{`/modify/${each.CompanyName}`} className=text-warning">
+                                            <a href={`/modify/${each.CompanyName}`} className="text-warning">
                                                 <span className="bi bi-pencil-fill"></span>
                                             </a>
                                             {each.CompanyName}
@@ -57,6 +57,8 @@ export const Traverse=(props)=>
                                                 window.location.assign("/")
                                             }}>
                                             <span class="bi bi-trash3-fill"></span>
+
+                                            
 
                                             </button>
                                             {/* // <a href={`/modify/${each.CompanyName}`}>

@@ -59,7 +59,7 @@ export const Create=()=>
         <>
             <div className="mt-4 row justify-content-center">
                 <p className="text-center text-primary text-uppercase display-5">
-                    Add new CompanyName
+                    Add new Company Name
                 </p>
                 <div className="col-lg-8 col-md-10 col-sm-12 p-5 shadow-lg">
                     <div className="form group">

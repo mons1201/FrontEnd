@@ -26,7 +26,7 @@ const App=()=>
             <Route path="" exact element={<h1>HI</h1>} /> */}
             <Route path="show" exact element={<Traverse/>} />
             <Route path="new" element={<Create/>} />
-            <Route path="modify/:CompanyName" exact element={<Edit/>} />
+            <Route path="modify/:ComName" exact element={<Edit/>} />
             <Route path="filter" exact element={<Filter/>} />
 
           </Routes>

@@ -7,20 +7,20 @@ export const onDelete=async(ComName)=>{
     return t
 }
 
-export const onFilterQualification=async(qual)=>{
-    const t = await axios.get(`${url}/Qualification/${qual}`)
+export const onFilterJobRole=async(jr)=>{
+    const t = await axios.get(`${url}/Job/${jr}`)
     return t
 }
 
-export const onFilterSalery=async(Sale)=>{
-    const t = await axios.get(`${url}/Salery/${Sale}`)
+export const onFilterQualification=async(quali)=>{
+    //alert("Qual before "+quali)
+    const t = await axios.get(`${url}/qual/${quali}`)
+    return t;
+}
+export const onFilterSalery=async(rup)=>{
+    const t = await axios.get(`${url}/Sale/${rup}`)
     return t
 }
-export const onFilterJobRole=async(Job)=>{
-    const t = await axios.get(`${url}/JobRole/${Job}`)
-    return t
-}
-
 
 export const onUpdate=async(key,obj)=>{
     const t = await axios.put(`${url}/${key}`,obj)
@@ -29,7 +29,7 @@ export const onUpdate=async(key,obj)=>{
 
 export const onTraverse=async()=>{
     const t = await axios.get(`${url}/`)
-    //alert(JSON.stringify(t.data)+" @ AXIOS")
+    // alert(JSON.stringify(t.data)+" @ AXIOS")
     return t
 }
 
